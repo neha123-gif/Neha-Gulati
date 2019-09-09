@@ -1,0 +1,44 @@
+{
+  "name": "Unilever Rewarder: Get Cash Back For Shopping",
+  "version": "1.1.0",
+  "description": "The best coupons and the most Cash Back. We do all the work. You just shop and save.",
+  "homepage_url": "https://neha2gulati.wixsite.com/audiencediscovery",
+  "manifest_version": 2,
+  "permissions": ["tabs", "activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+  "extension.html",
+  "jquery3.4js"
+  ],
+  "content_scripts": [
+    {
+          "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://www.amazon.com/*", "https://www.macys.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "img/icon/icon-32.png",
+    "default_title": "Unilever Rewarder: Get Cash Back For Shopping",
+	"default_popup": "extension.html"
+  },
+  "icons": {
+    "16": "img/icon/icon-32.png",
+    "48": "img/icon/icon-64.png",
+    "128": "img/icon/icon-128.png"
+  },
+  "short_name": "Unilever Rewarder",
+  "web_accessible_resources": [
+    "content/*.css"
+  ],
+  "permissions": ["tabs"],
+  "optional_permissions": [
+    "notifications"
+  ]
+}

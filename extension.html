@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unilever Rewarder Extension</title>
+	<script src="extension.js"></script>
+
+<!-- 		CSS  -->
+
+<style>		
+	
+
+.element.style {
+    opacity: 1;
+    top: 10px;
+    height: 92px;
+    justify-content: center;
+    width: 310px;
+    display: flex;
+    align-items: center;
+   margin-left: 90px !important;
+}
+
+div.ebates-notification {
+    position: fixed;
+    right: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    background: #fff;
+    font-size: 100%;
+    font-style: normal !important;
+    overflow: hidden;
+    z-index: 2147483647!important;
+    max-width: 455px;
+    width: 450px;
+    box-sizing: content-box !important;
+}
+
+
+div.ebates-notification .ebates-notification-logo-bg {
+    background: linear-gradient(238.26deg, #ED5050 0%, #871E8D 43.52%, #478AD9 100%) !important;
+    padding: 0 16px;
+    position: absolute;
+    z-index: 1;
+    width: 110px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.ebates-notification * {
+    box-sizing: content-box !important;
+    vertical-align: initial;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0px !important;
+    -webkit-text-stroke: 0;
+}
+
+div.ebates-notification .ebates-notification-logo-bg .ebates-notification-logo-bg-arrow {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    border-top: 47px solid white !important;
+    border-bottom: 47px solid white !important;
+    border-left: 23px solid transparent !important;
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+div.ebates-notification .ebates-notification-body {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+div.ebates-notification .ebates-notification-button {
+    position: relative;
+    cursor: pointer;
+    min-width: 230px !important;
+    max-width: 1260px;
+    min-height: 40px !important;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #FFF !important;
+    text-decoration: none;
+    line-height: 20px !important;
+    font-family: 'Benton', 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    display: block;
+    margin: 4px 8px !important;
+    padding: 0 8px !important;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none !important;
+    text-shadow: none !important;
+    color: #fff !important;
+    background: #ED5050 !important;
+    border: 0 !important;
+    border-radius: 99px !important;
+    box-shadow: none !important;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s !important;
+    min-height: 46px !important;
+    padding: 0 16px !important;
+    margin: 4px 16px !important;
+    outline: none;
+}
+
+div.ebates-notification .ebates-notification-close {
+    background-size: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Benton', 'Montserrat', sans-serif !important;
+    font-weight: 300 !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    color: #888;
+}
+
+</style>
+</head>
+<body>
+<div class="ebates-notification" style="opacity: 1; top: 10px;"><div class="ebates-notification-logo-bg"><div class="ebates-notification-logo"></div> <div class="ebates-notification-logo-bg-arrow"></div></div> <div class="ebates-notification-panel" style="justify-content: flex-end;"><div class="ebates-notification-body" style="height: 92px; justify-content: center; width: 310px; margin-left: 150px !important; display: flex; align-items: center; opacity: 1;"><div><button class="ebates-notification-button ebates-notification-button-login" id="1234">
+					Activate 3% Cash Back
+				</button> <center><span class="ebates-notification-close">Activate Later</span></center></div></div></div> <!----> <!----> </div>
+
+<!-- 2nd Pop up -->
+
+				<div class="ebates-popover ebates-popover_arrow-top" id="5678" style="top: 112px; right: 75px; opacity: 1;">
+	<div class="ebates-popover__content" style="width: 320px;">
+		<div class="ebates-popover__title">Activating Cash Back Is Easy!</div>
+		<div class="ebates-popover__description">Just click the red "Activate" bar whenever you see it. Try it now!</div>
+	</div>
+</div>
+</body>
+
+</html>
